@@ -1,0 +1,9 @@
+.navbar {
+    border-style: solid;
+    /* display: grid;
+    place-items: center; */
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
