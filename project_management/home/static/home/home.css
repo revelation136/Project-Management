@@ -14,7 +14,6 @@
 }
 
 .navbar_container {
-    border-style: double;
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -31,7 +30,6 @@
 }
 
 .navbar_item {
-    border-style: dotted;
     height: 80px;
 }
 
