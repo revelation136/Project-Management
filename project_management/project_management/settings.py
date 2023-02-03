@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # my apps
     'home',
+    'work_force',
 
 
     'django.contrib.admin',
