@@ -1,0 +1,10 @@
+{% extends "workforce/layout.html" %}
+
+{% block body %}
+    <h1>Manpower</h1>
+    <ul>
+        {% for manpower in manpowers %}
+            <li>{{ manpower.id }}: {{ manpower.first }} {{ manpower.last }}: {{ manpower.rate }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
