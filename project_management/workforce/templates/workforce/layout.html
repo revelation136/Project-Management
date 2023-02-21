@@ -5,13 +5,6 @@
         <title>Work Force</title>
     </head>
     <body>
-        <h1>Hello</h1>
-        <h1>Manpower</h1>
-        <ul>
-            {% for manpower in manpowers %}
-                <li>{{ manpower.id }}: {{ manpower.first }} {{ manpower.last }} - {{ manpower.rate }}</li>
-            {% endfor %}
-        </ul>
         {% block body %}
         {% endblock %}
     </body>
