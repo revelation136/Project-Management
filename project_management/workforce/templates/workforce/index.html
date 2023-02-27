@@ -2,9 +2,32 @@
 
 {% block body %}
     <h1>Manpower</h1>
-    <ul>
+    <!-- <ul>
         {% for manpower in manpowers %}
             <li>{{ manpower.id }}: {{ manpower.first }} {{ manpower.last }}: {{ manpower.rate }}</li>
         {% endfor %}
-    </ul>
+    </ul> -->
+
+    <table>
+        <thead>
+            <!-- <caption>Manpower Loading</caption> -->
+            <tr>
+                <th>ID</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>RATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for manpower in manpowers %}
+                <tr>
+                    <td>{{ manpower.id }}</td>
+                    <td>{{ manpower.first }}</td>
+                    <td>{{ manpower.last }}</td>
+                    <td>{{ manpower.rate }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
 {% endblock %}

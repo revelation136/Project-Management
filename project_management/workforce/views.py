@@ -4,7 +4,7 @@ from .models import Manpower
 # Create your views here.
 
 
-def index(request):
+def employee_list(request):
     return render(request, "workforce/index.html", {
         "manpowers": Manpower.objects.all()
     })
