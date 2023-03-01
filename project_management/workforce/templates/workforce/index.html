@@ -10,7 +10,6 @@
 
     <table>
         <thead>
-            <!-- <caption>Manpower Loading</caption> -->
             <tr>
                 <th>ID</th>
                 <th>FIRST NAME</th>
@@ -19,12 +18,12 @@
             </tr>
         </thead>
         <tbody>
-            {% for manpower in manpowers %}
+            {% for employee in employees %}
                 <tr>
-                    <td>{{ manpower.id }}</td>
-                    <td>{{ manpower.first }}</td>
-                    <td>{{ manpower.last }}</td>
-                    <td>{{ manpower.rate }}</td>
+                    <td>{{ employee.id }}</td>
+                    <td>{{ employee.first }}</td>
+                    <td>{{ employee.last }}</td>
+                    <td>{{ employee.rate }}</td>
                 </tr>
             {% endfor %}
         </tbody>

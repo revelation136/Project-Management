@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # my apps
     'home',
     'workforce',
+    'projects',
 
 
     'django.contrib.admin',
