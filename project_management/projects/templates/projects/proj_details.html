@@ -5,16 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>{{ gen_req.name }}</h1>
-
+    <h1>h!</h1>
+{% for project in projects %}
+    <h1>{{ project.name }}</h1>
+{% endfor %}
     <ul>
-        <li>{{ gen_req.project_supervision }}</li>
-        <li>{{ gen_req.delivery }}</li>
-        <li>{{ gen_req.service_vehicle }}</li>
-        <li>{{ gen_req.water_consumption }}</li>
-        <li>{{ gen_req.power_consumption }}</li>
-        <li>{{ gen_req.power_consumption }}</li>
-        <li>{{ gen_req.first_aid }}</li>
+        {% for items in gen_req %}
+        <li>Project Supervision: ${{ items.project_supervision }}</li>
+        <li>Delivery of Materials: ${{ items.delivery }}</li>
+        <li>Service Vehicle: ${{ items.service_vehicle }}</li>
+        <li>Water Consumption: ${{ items.water_consumption }}</li>
+        <li>Power Consumption: ${{ items.power_consumption }}</li>
+        <li>First Aid: ${{ items.first_aid }}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>
