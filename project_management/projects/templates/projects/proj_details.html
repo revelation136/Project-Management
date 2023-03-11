@@ -6,18 +6,27 @@
 </head>
 <body>
     <h1>h!</h1>
-{% for project in projects %}
-    <h1>{{ project.name }}</h1>
-{% endfor %}
-    <ul>
-        {% for items in gen_req %}
-        <li>Project Supervision: ${{ items.project_supervision }}</li>
-        <li>Delivery of Materials: ${{ items.delivery }}</li>
-        <li>Service Vehicle: ${{ items.service_vehicle }}</li>
-        <li>Water Consumption: ${{ items.water_consumption }}</li>
-        <li>Power Consumption: ${{ items.power_consumption }}</li>
-        <li>First Aid: ${{ items.first_aid }}</li>
-        {% endfor %}
-    </ul>
+    <h1>{{ project.id }}</h1>
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Description</th>-->
+<!--                <th>Quantity</th>-->
+<!--                <th>Unit</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            {% for pay_item in pay_items %}-->
+<!--                <tr>-->
+<!--                    <td>Mobilization: {{ pay_item.mobilization }}</td>-->
+<!--                    <td>{{ pay_item.occupational_safety }}</td>-->
+<!--                    <td>{{ pay_item.temporary_facility }}</td>-->
+<!--                    <td>{{ pay_item.reinforce_concrete }}</td>-->
+<!--                    <td>{{ pay_item.masonry_works }}</td>-->
+<!--                    <td>{{ pay_item.steel_works }}</td>-->
+<!--                </tr>-->
+<!--            {% endfor %}-->
+<!--        </tbody>-->
+<!--    </table>-->
 </body>
 </html>

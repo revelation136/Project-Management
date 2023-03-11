@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Projects, GeneralRequirement
+from .models import Project, PayItem
 
 # Register your models here.
-admin.site.register(Projects)
-admin.site.register(GeneralRequirement)
+admin.site.register(Project)
+admin.site.register(PayItem)

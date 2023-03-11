@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Projects, GeneralRequirement
+from .models import Project, PayItem
 
 
 # Create your views here.
@@ -7,13 +7,13 @@ from .models import Projects, GeneralRequirement
 
 def index(request):
     return render(request, "projects/index.html", {
-        "projects": Projects.objects.all(),
+        "projects": Project.objects.all(),
     })
 
 
-def genreq(request, project_id):
-    project = Projects.objects.get(id=project_id)
+def pay_item(request, project_id):
+    project = Project.objects.get(id=project_id)
+    # pay_items = PayItem.objects.all()
     return render(request, "projects/proj_details.html", {
-        "gen_req": GeneralRequirement.objects.all(),
-        "projects": Projects.objects.all()
+        "project": project
     })
