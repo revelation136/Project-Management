@@ -13,7 +13,8 @@ def index(request):
 
 def pay_item(request, project_id):
     project = Project.objects.get(id=project_id)
-    # pay_items = PayItem.objects.all()
+    pay_items = project.payitem.all()
     return render(request, "projects/proj_details.html", {
-        "project": project
+        "project": project,
+        "pay_items": pay_items,
     })

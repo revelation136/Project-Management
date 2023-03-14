@@ -7,26 +7,16 @@
 <body>
     <h1>h!</h1>
     <h1>{{ project.id }}</h1>
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>Description</th>-->
-<!--                <th>Quantity</th>-->
-<!--                <th>Unit</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody>-->
-<!--            {% for pay_item in pay_items %}-->
-<!--                <tr>-->
-<!--                    <td>Mobilization: {{ pay_item.mobilization }}</td>-->
-<!--                    <td>{{ pay_item.occupational_safety }}</td>-->
-<!--                    <td>{{ pay_item.temporary_facility }}</td>-->
-<!--                    <td>{{ pay_item.reinforce_concrete }}</td>-->
-<!--                    <td>{{ pay_item.masonry_works }}</td>-->
-<!--                    <td>{{ pay_item.steel_works }}</td>-->
-<!--                </tr>-->
-<!--            {% endfor %}-->
-<!--        </tbody>-->
-<!--    </table>-->
+
+    <ul>
+        {% for pay_item in pay_items %}
+        <li>Mobilization: {{ pay_item.mobilization }}</li>
+        <li>Occupational Safety: {{ pay_item.occupational_safety }}</li>
+        <li>Temporary Facility: {{ pay_item.temporary_facility }}</li>
+        <li>Reinforce Concrete: {{ pay_item.reinforce_concrete }}</li>
+        <li>Masonry Works: {{ pay_item.masonry_works }}</li>
+        <li>Steel Works: {{ pay_item.steel_works }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

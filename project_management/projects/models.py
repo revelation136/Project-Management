@@ -38,3 +38,5 @@ class PayItem(models.Model):
             Masonry Works: {self.masonry_works}
             Steel Works: {self.steel_works}
         """
+# query: project = Project.objects.get(pk=1)
+# items = project.payitem.all() PayItem = payitem this is the syntax
