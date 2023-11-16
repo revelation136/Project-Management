@@ -35,9 +35,8 @@ INSTALLED_APPS = [
     'home',
     'workforce',
     'projects',
+
     'django_extensions',
-
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
